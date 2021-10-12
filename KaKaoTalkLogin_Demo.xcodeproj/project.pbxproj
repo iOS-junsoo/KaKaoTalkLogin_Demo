@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08B98AC849E4D74B7209A995 /* Pods_KaKaoTalkLogin_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1693F5E35BD72E8F291F1A91 /* Pods_KaKaoTalkLogin_Demo.framework */; };
 		9978D968271530D7009DD07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D967271530D7009DD07A /* AppDelegate.swift */; };
 		9978D96A271530D7009DD07A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D969271530D7009DD07A /* SceneDelegate.swift */; };
 		9978D96C271530D7009DD07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9978D96B271530D7009DD07A /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1693F5E35BD72E8F291F1A91 /* Pods_KaKaoTalkLogin_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KaKaoTalkLogin_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1F736D29E5E200B64D4DC7 /* Pods-KaKaoTalkLogin_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalkLogin_Demo.debug.xcconfig"; path = "Target Support Files/Pods-KaKaoTalkLogin_Demo/Pods-KaKaoTalkLogin_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		9978D964271530D7009DD07A /* KaKaoTalkLogin_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaKaoTalkLogin_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9978D967271530D7009DD07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9978D969271530D7009DD07A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		9978D970271530D9009DD07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9978D973271530D9009DD07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9978D975271530D9009DD07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9978D97B27154B35009DD07A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ADB93E2523EC11AB7ADF8C93 /* Pods-KaKaoTalkLogin_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaKaoTalkLogin_Demo.release.xcconfig"; path = "Target Support Files/Pods-KaKaoTalkLogin_Demo/Pods-KaKaoTalkLogin_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08B98AC849E4D74B7209A995 /* Pods_KaKaoTalkLogin_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E21A17742CA703D8E50BE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F1F736D29E5E200B64D4DC7 /* Pods-KaKaoTalkLogin_Demo.debug.xcconfig */,
+				ADB93E2523EC11AB7ADF8C93 /* Pods-KaKaoTalkLogin_Demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3C1A1C1A5937CCE4DC660FC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1693F5E35BD72E8F291F1A91 /* Pods_KaKaoTalkLogin_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9978D95B271530D7009DD07A = {
 			isa = PBXGroup;
 			children = (
 				9978D966271530D7009DD07A /* KaKaoTalkLogin_Demo */,
 				9978D965271530D7009DD07A /* Products */,
+				00E21A17742CA703D8E50BE4 /* Pods */,
+				3C1A1C1A5937CCE4DC660FC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +88,7 @@
 				9978D970271530D9009DD07A /* Assets.xcassets */,
 				9978D972271530D9009DD07A /* LaunchScreen.storyboard */,
 				9978D975271530D9009DD07A /* Info.plist */,
+				9978D97B27154B35009DD07A /* README.md */,
 			);
 			path = KaKaoTalkLogin_Demo;
 			sourceTree = "<group>";
@@ -74,9 +100,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9978D978271530D9009DD07A /* Build configuration list for PBXNativeTarget "KaKaoTalkLogin_Demo" */;
 			buildPhases = (
+				3CAB46E9DDA3228790965084 /* [CP] Check Pods Manifest.lock */,
 				9978D960271530D7009DD07A /* Sources */,
 				9978D961271530D7009DD07A /* Frameworks */,
 				9978D962271530D7009DD07A /* Resources */,
+				CE4FB894B3BCAE87678341E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3CAB46E9DDA3228790965084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaKaoTalkLogin_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4FB894B3BCAE87678341E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalkLogin_Demo/Pods-KaKaoTalkLogin_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalkLogin_Demo/Pods-KaKaoTalkLogin_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KaKaoTalkLogin_Demo/Pods-KaKaoTalkLogin_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9978D960271530D7009DD07A /* Sources */ = {
@@ -284,6 +354,7 @@
 		};
 		9978D979271530D9009DD07A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F1F736D29E5E200B64D4DC7 /* Pods-KaKaoTalkLogin_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +383,7 @@
 		};
 		9978D97A271530D9009DD07A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB93E2523EC11AB7ADF8C93 /* Pods-KaKaoTalkLogin_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

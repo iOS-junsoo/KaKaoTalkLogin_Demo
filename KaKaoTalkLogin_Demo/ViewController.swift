@@ -6,14 +6,37 @@
 //
 
 import UIKit
+import KakaoSDKCommon
+import KakaoSDKAuth
+import KakaoSDKUser
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    @IBAction func login(_ sender: UIButton) {
+        UserApi.shared.loginWithKakaoAccount {(oauthToken, error) in
+           if let error = error {
+               print(error)
+           }
+           else {
+               print("loginWithKakaoAccount() success.")
+                _ = oauthToken
+         }
+     }
+    }
+    
+    @IBAction func logout(_ sender: UIButton) {
+        UserApi.shared.logout {(error) in
+            if let error = error {
+                print(error)
+            }
+            else {
+                print("logout() success.")
+            }
+        }
+    }
 }
 
