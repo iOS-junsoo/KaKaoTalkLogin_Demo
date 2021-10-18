@@ -12,6 +12,8 @@ import KakaoSDKUser
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,6 +24,23 @@ class ViewController: UIViewController {
                print(error)
            }
            else {
+               //로그인 성공후 사용자 정보 가져오기
+               UserApi.shared.me() {(user, error) in
+                   if let error = error {
+                       print(error)
+                   }
+                   else {
+                       
+                       self.userName.text = user?.kakaoAccount?.profile?.nickname!
+                       self.userName.sizeToFit()
+                       let url = user?.kakaoAccount?.profile?.profileImageUrl
+                       let data = try? Data(contentsOf: url!)
+                       self.userImage.image = UIImage(data: data!)
+                       print("asd")
+
+                       _ = user
+                   }
+               }
                print("loginWithKakaoAccount() success.")
                 _ = oauthToken
          }

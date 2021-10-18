@@ -9,7 +9,8 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>kakao4f4328ba5d42fcf3d34fffba19d9f08c</string>
+				<string>kakao</string>
+				<string>a124b6bbe4fab5552b1e757aaac72318</string>
 			</array>
 		</dict>
 	</array>
